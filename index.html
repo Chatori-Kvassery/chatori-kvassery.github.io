@@ -21,9 +21,16 @@
    <body bgcolor="white">
       <h1>RyeAde - Artisanal Ukrainian Kvass</h1>
 
+      <!-- PayPal add to cart button-->
       <paypal-add-to-cart-button data-id="33YCRD45DL45S"></paypal-add-to-cart-button>
          <script>
            cartPaypal.AddToCart({ id: "33YCRD45DL45S" })
+         </script>
+
+      <!-- View Cart Button -->
+      <paypal-cart-button data-id="pp-view-cart"></paypal-cart-button>
+         <script>
+            cartPaypal.Cart({ id: "pp-view-cart" })
          </script>
    </body>
 </html>
